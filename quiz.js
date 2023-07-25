@@ -32,11 +32,12 @@ let count1=()=>{
 }
 
 let correct = () => {
-        ans=ans+1;
+  
         if(count>=1){
           return;
         }
         else{
+          ans=ans+1;
           count++;
         clearInterval(timerIds)
         clearInterval(timerId)
@@ -63,6 +64,7 @@ let wrong = () => {
     return;
   }
   else{
+  
     count++;
     clearInterval(timerIds)
     clearInterval(timerId)
@@ -90,7 +92,7 @@ let wrong1 = () => {
     return;
   }
   else{
-
+ 
   count++;
   clearInterval(timerIds)
   clearInterval(timerId)
