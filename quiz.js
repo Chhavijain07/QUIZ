@@ -18,7 +18,7 @@ let timerId4
 box2.style.display = "none"
 box.style.display = "none"
 let count = 0;
-let chance = 0;
+let chance;
 let ans=0;
 timer.innerHTML=1;
 ansbox.style.display="none"
@@ -27,11 +27,17 @@ q2.style.display = "none"
 q3.style.display = "none"
 q4.style.display = "none"
 q5.style.display="none"
+let count1=()=>{
+  count=0;
+}
 
 let correct = () => {
         ans=ans+1;
-
-
+        if(count>=1){
+          return;
+        }
+        else{
+          count++;
         clearInterval(timerIds)
         clearInterval(timerId)
         clearInterval(timerId2)
@@ -40,7 +46,7 @@ let correct = () => {
         let op1 = document.getElementById("op1")
 
         op1.style.backgroundColor = "#95d395";
-        op1.style.borderColor = "#95d395";
+        op1.style.borderColor = "green";
         op1.style.color = "black";
         op1.style.fontWeight = "bold";
         
@@ -48,11 +54,15 @@ let correct = () => {
         ansbox.innerHTML = ` Correct Answer : ${op1.value}`
         ansbox.style.display = "block"
         return;
-    
+        }
    
 }
 
 let wrong = () => {
+  if(count>=1){
+    return;
+  }
+  else{
     count++;
     clearInterval(timerIds)
     clearInterval(timerId)
@@ -72,16 +82,23 @@ let wrong = () => {
         op2.style.fontWeight = "bold";
         alert("OOPS...! Wrong Answer");
         return;
+  }
     
 }
 let wrong1 = () => {
+  if(count>=1){
+    return;
+  }
+  else{
+
+  count++;
   clearInterval(timerIds)
   clearInterval(timerId)
   clearInterval(timerId2)
   clearInterval(timerId3)
   clearInterval(timerId4)
    
-        count++
+      
         ansbox.innerHTML = `The Correct Ans Is : ${op1.value}`
         ansbox.style.display = "block"
         let op3 = document.querySelector("#op3")
@@ -93,21 +110,26 @@ let wrong1 = () => {
         alert("OOPS...! Wrong Answer");
     
     return;
+  }
 }
 let wrong2 = () => {
 
-    
-    
+  if(count>=1){
+    return;
+  }
+  else{ 
+    count++;
   clearInterval(timerIds)
   clearInterval(timerId)
   clearInterval(timerId2)
   clearInterval(timerId3)
   clearInterval(timerId4)
-        count++;
+     
         ansbox.innerHTML = `The Correct Ans Is : ${op1.value}`
         ansbox.style.display = "block"
         let op4 = document.querySelector("#op4")
 
+        
         op4.style.backgroundColor = "red";
         op4.style.borderColor = "red";
         op4.style.color = "black";
@@ -119,6 +141,7 @@ let wrong2 = () => {
     
 
     return;
+  }
 }
 let begin=()=>{
     start.innerHTML=q1;
@@ -157,6 +180,7 @@ let begin=()=>{
 
 
 let show = () => {
+  count1();
     clearInterval(timerIds)
     let timer1= document.getElementById("timer1");
     ansbox.style.display = "none"
@@ -190,7 +214,7 @@ let show = () => {
 
 
 let show1 = () => {
-  
+  count1()
     clearInterval(timerId);
     let timer2= document.getElementById("timer2");
     ansbox.style.display = "none"
@@ -226,6 +250,7 @@ let show1 = () => {
 
 
 let show2 = () => {
+  count1()
          clearInterval(timerId2);
         ansbox.style.display = "none"
         q3.innerHTML = q4;
@@ -260,6 +285,7 @@ let show2 = () => {
    
 }
 let show3=()=>{
+  count1()
     clearInterval(timerId3);
     ansbox.style.display = "none"
     q4.innerHTML = q5;
@@ -292,6 +318,7 @@ let show3=()=>{
  
 }
 let show4 = () => {
+  count1()
         clearInterval(timerId4);
         ansbox.style.display = "none"
         q5.style.display = "none"
