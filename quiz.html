@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="quiz.css" rel="stylesheet">
+   
+</head>
+
+<body>
+    <center>
+ <button id="start1" onclick="begin()">START QUIZ</button>
+    <div id="q1"  >
+        <div class="head">
+         <p id="qno">Question-1</p>
+         <p class="showt" id="timer"></p>
+        </div><h3>JavaScript is an __________ ?</h3>
+       
+     <input type="text" class="options" id="op1" value="Object Oriented" readonly required onclick="correct()"><br>
+     <input type="text" class="options" id="op2" value="Object-Based " readonly onclick="wrong()"> <br>
+     <input type="text"class="options" id="op3"  value="Procedural" readonly onclick="wrong1()"><br>
+     <input type="text" class="options" id="op4" value="None of the above" readonly onclick="wrong2()"><br>
+ 
+   
+     
+       
+         <button id="next" onclick="show()" value="next" >Next</button>
+        
+       
+    </div>
+    
+  
+    <div id="q2"  >
+        <div class="head">
+            <p id="qno">Question-2</p>
+            <p   class="showt" id="timer1"></p>
+           </div>
+        <h3>Which of the following methods is used to access HTML elements using Javascript?</h3>
+        <input type="text"  class="options" id="op2" value="getElementbyId()" readonly onclick="wrong()"><br>
+        <input type="text"  class="options" id="op3" value="getElementsByClassName()" readonly onclick="wrong1()"><br>
+        <input type="text"  class="options" id="op1" value="Both A and B" readonly  onclick="correct()"><br>
+        <input type="text"  class="options"  id="op4" value="None of the above" readonly onclick="wrong2()"><br>
+      
+        
+      
+          
+           
+             <button id="next" onclick="show1()" value="next" >Next</button>
+       
+    </div>
+ 
+    <div id="q3"  >
+        <div class="head">
+            <p id="qno">Question-3</p>
+            <p  class="showt"  class="showt" id="timer2"></p>
+           </div>
+        <h3>Which of the following methods can be used to display data in some form using Javascript? </h3>
+        <input type="text"  class="options"  id="op2"value="document.write()" readonly onclick="wrong()"><br>
+        <input type="text"  class="options" id="op3" value="console.log() " readonly onclick="wrong1()"><br>
+        <input type="text"  class="options" id="op4" value="window.alert()" readonly onclick="wrong2()"><br>
+        <input type="text"  class="options" id="op1" value="All of the above" readonly  onclick="correct()"><br>
+          
+        
+           
+             <button id="next" onclick="show2()" value="next" >Next</button>
+         
+    </div>
+    <div id="q4"  >
+        <div class="head">
+            <p id="qno">Question-4</p>
+            <p class="showt" id="timer3"></p>
+           </div>
+        <h3> 
+            What will be the output of the following code snippet?</h3>
+            <img src="Q4IMG.jpg " width="300px">
+        <input type="text"  class="options"  id="op2" value="Compilation Error" readonly onclick="wrong()"><br>
+        <input type="text"  class="options" id="op3" value="14" readonly onclick="wrong1()"><br>
+        <input type="text"  class="options" id="op4" value="Error" readonly onclick="wrong2()"><br>
+        <input type="text" class="options" id="op1" value="59" readonly  onclick="correct()"><br>
+        
+       
+          
+           
+             <button id="next" onclick="show3()" value="next" >Next</button>
+           
+    </div>
+    <div id="q5"  >
+        <div class="head">
+            <p id="qno">Question-5</p>
+            <p  class="showt" id="timer4"></p>
+           </div>
+        <h3>How do you round the number 5.35 to the nearest integer?</h3>
+           
+        <input type="text"  class="options"  id="op1" value="Math.round(5.35)" readonly onclick="correct()"><br>
+        <input type="text"  class="options" id="op2" value="round(5.35)" readonly onclick="wrong()"><br>
+        <input type="text"  class="options" id="op3" value="Math.rnd(5.35)" readonly onclick="wrong1()"><br>
+        <input type="text" class="options" id="op4" value="rnd(5.35)" readonly onclick="wrong1()"><br>
+        
+    
+         
+           
+             <button id="next" onclick="show4()" value="next" >Next</button>
+          
+    </div>
+    <div id="ansbox"></div>
+    <img id="box" src="">
+    <h3 id="box2"></h3>
+</center>
+ 
+<script src="quiz.js"></script>
+   
+</body>
+
+</html>
