@@ -10,6 +10,7 @@ let box=document.getElementById("box")
 let box2=document.getElementById("box2");
 let timer= document.getElementById("timer");
 let start= document.getElementById("start1")
+
 let timerIds
 let timerId 
 let timerId2
@@ -44,8 +45,8 @@ let correct = () => {
         clearInterval(timerId2)
         clearInterval(timerId3)
         clearInterval(timerId4)
+    
         let op1 = document.getElementById("op1")
-
         op1.style.backgroundColor = "#95d395";
         op1.style.borderColor = "green";
         op1.style.color = "black";
@@ -73,11 +74,11 @@ let wrong = () => {
     clearInterval(timerId4)
  
  
-     
+    let op1 = document.getElementById("op1")
     ansbox.innerHTML = `The Correct Ans Is : ${op1.value}`
         ansbox.style.display = "block"
         let op2 = document.querySelector("#op2")
-
+       
         op2.style.backgroundColor = "red";
         op2.style.borderColor = "red";
         op2.style.color = "black";
@@ -100,7 +101,7 @@ let wrong1 = () => {
   clearInterval(timerId3)
   clearInterval(timerId4)
    
-      
+  let op1 = document.getElementById("op1") 
         ansbox.innerHTML = `The Correct Ans Is : ${op1.value}`
         ansbox.style.display = "block"
         let op3 = document.querySelector("#op3")
@@ -126,6 +127,7 @@ let wrong2 = () => {
   clearInterval(timerId2)
   clearInterval(timerId3)
   clearInterval(timerId4)
+  let op1 = document.getElementById("op1")
      
         ansbox.innerHTML = `The Correct Ans Is : ${op1.value}`
         ansbox.style.display = "block"
