@@ -10,10 +10,8 @@ body{
     height: 50px;
   padding-top: 20px;
     color: white;
- 
-    border-radius: 10px;
-  font-size: 20px;
-   
+   border-radius: 10px;
+    font-size: 20px;
     margin-top: 20px;
     font-weight: bolder;
 }
@@ -22,7 +20,7 @@ body{
     border-color:  #3d0606;
     border-radius: 5px;
 height: 20px;
-width: 300px;
+width: 40vw;
 font-weight: large;
 
 color: black;
@@ -38,8 +36,8 @@ color: black;
     align-items: center;
 }
 #q1{
-    width: 444px;
-    box-shadow: 5px 5px 5px #997676;
+    width: 50vw;
+    box-shadow: 8px 8px 8px #997676;
     background-color: white;
     color: brown;
     margin-top: 80px;
@@ -59,8 +57,8 @@ h3{
    
 } 
 #q2{
-    width: 444px;
-    box-shadow: 5px 5px 5px #997676;
+    width: 50vw;
+    box-shadow: 8px 8px 8px #997676;
     background-color: white;
     color: brown;
     margin-top: 80px;
@@ -69,8 +67,8 @@ h3{
     font-size: 14px;
 }
 #q3{
-    width: 444px;
-    box-shadow: 5px 5px 5px #997676;
+    width: 50vw;
+    box-shadow: 8px 8px 8px #997676;
     background-color: white;
     color: brown;
     margin-top: 80px;
@@ -79,8 +77,8 @@ h3{
     font-size: 14px;
 }
 #q4{
-    width: 444px;
-    box-shadow: 5px 5px 5px #997676;
+    width: 50vw;
+    box-shadow: 8px 8px 8px #997676;
     background-color: white;
     color: brown;
     margin-top: 80px;
@@ -94,8 +92,8 @@ h3{
     margin-top: 20px;
 }
 #q5{
-    width: 444px;
-    box-shadow: 2px 2px 5px #a96161;
+    width: 50vw;
+    box-shadow: 8px 8px 8px #997676;
     background-color: white;
     color: brown;
     margin-top: 80px;
@@ -174,4 +172,19 @@ h3{
         padding-bottom: 20px;
       }
 
-
+@media (max-width:500px) {
+   
+    .options{
+        width: 250px;
+        cursor: pointer;
+    }
+    #box {
+        width: 222px;
+        height: 240px;
+        margin-top: 230px;
+    }
+    #ansbox{
+        font-size: 15px;
+    }
+   
+}
