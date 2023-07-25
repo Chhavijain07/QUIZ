@@ -183,12 +183,18 @@ h3{
         }
         #q2{
             width: 300px;
+            font-size: 12px;
         }
         #q3{
             width: 300px;
+            font-size: 12px;
         }
         #q4{
             width: 300px;
+            font-size: 12px;
+        }
+        #q4 img{
+            width: 250px;
         }
         #q5{
             width: 300px;
