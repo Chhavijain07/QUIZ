@@ -11,6 +11,7 @@ let box2=document.getElementById("box2");
 let timer= document.getElementById("timer");
 let start= document.getElementById("start1")
 
+
 let timerIds
 let timerId 
 let timerId2
